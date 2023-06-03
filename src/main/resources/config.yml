@@ -1,0 +1,27 @@
+messages:
+  pet-help:
+    - ""
+    - "&#7CFC00/pet shop &#d3d3d3- Buy a pet"
+    - "&#7CFC00/pet upgrades &#d3d3d3- Upgrade your pet"
+    - "&#7CFC00/pet here &#d3d3d3- Call your pet"
+    - "&#7CFC00/pet away &#d3d3d3- Send your pet away"
+    - "&#7CFC00/pet name &#d3d3d3- Change your pet's name"
+    - "&#7CFC00/pet change &#d3d3d3- Change your pet"
+    - "&#7CFC00/pet remove &#d3d3d3- Remove your pet"
+    - ""
+    - "&#7CFC00Plugin developed by BlackCult666"
+  pet-here:
+    pet-called: "&#7CFC00Your pet has come to you!"
+  pet-away:
+    already-away: "&#ff017eYour pet is not here, so you can't send it away."
+    sent-away: "&#ff017eYou have sent your pet away..."
+  pet-upgrades:
+    upgraded: "&#7CFC00You have upgraded &a%effect% &#7CFC00to level &a%level% &#7CFC00for &a$%price%&#7CFC00!"
+    max-effects-reached: "&#ff017eYour pet cannot have more than %number% effects!"
+  pet-name:
+    correct-usage: "&#ff017eCorrect usage: /pet name <name>"
+    invalid-name: "&#ff017eYour name has to contain only alphanumeric characters!"
+    max-characters: "&#ff017eSorry.. you can't set more than %characters% characters! :("
+    changed: "&#7CFC00You have changed your pet's name to: %name%"
+  pet-remove:
+    removed: "&#7CFC00You don't have a pet anymore."
