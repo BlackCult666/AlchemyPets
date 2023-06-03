@@ -7,11 +7,11 @@ import me.blackcult.alchemypets.util.Utils;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryClickEvent;
-import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.inventory.Inventory;
 
 public class ShopInventory extends InventoryHandler {
-    private AlchemyPets plugin;
+
+    private final AlchemyPets plugin;
     private Inventory inv;
 
     public ShopInventory(AlchemyPets plugin) {
@@ -45,8 +45,26 @@ public class ShopInventory extends InventoryHandler {
         player.openInventory(inv);
     }
 
+    // This code should be improved.
     @Override
     public void onClick(InventoryClickEvent e) {
+        Player p = (Player) e.getWhoClicked();
+        for(String key : plugin.getInventoryFile().getConfigurationSection("pet-shop.pets").getKeys(false)) {
+            if(!plugin.getInventoryFile().getString("pet-shop.pets." + key + ".slot").equals(String.valueOf(e.getSlot() + 1))) {
+                continue;
+            }
+            String entityType = plugin.getInventoryFile().getString("pet-shop.pets." + key + ".type");
+            if(entityType != null) {
+                plugin.getPetData().addPlayerPet(p, entityType);
+                plugin.getPetManager().spawnPet(p);
+                p.closeInventory();
+                break;
+            }
+            if(plugin.getPetManager().hasPet(p)) {
+                p.sendMessage(Utils.color(plugin.getConfigFile().getString("messages.has-pet")));
+                break;
+            }
+        }
         e.setCancelled(true);
     }
 }

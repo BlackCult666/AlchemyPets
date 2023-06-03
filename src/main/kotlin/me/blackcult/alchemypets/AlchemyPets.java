@@ -6,6 +6,8 @@ import me.blackcult.alchemypets.inventories.InventoryManager;
 import me.blackcult.alchemypets.inventories.impl.ShopInventory;
 import me.blackcult.alchemypets.listeners.InventoryListener;
 import me.blackcult.alchemypets.managers.FileManager;
+import me.blackcult.alchemypets.pets.PetData;
+import me.blackcult.alchemypets.pets.PetManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class AlchemyPets extends JavaPlugin {
@@ -16,6 +18,9 @@ public class AlchemyPets extends JavaPlugin {
     private InventoryManager inventoryManager;
     private ShopInventory shopInventory;
 
+    private PetData petData;
+    private PetManager petManager;
+
     @Override
     public void onEnable() {
         configFile = new FileManager(this, "config.yml");
@@ -24,6 +29,9 @@ public class AlchemyPets extends JavaPlugin {
 
         inventoryManager = new InventoryManager();
         shopInventory = new ShopInventory(this);
+
+        petData = new PetData(this);
+        petManager = new PetManager(this);
 
         getServer().getPluginManager().registerEvents(new InventoryListener(inventoryManager), this);
 
@@ -35,6 +43,14 @@ public class AlchemyPets extends JavaPlugin {
 
         commandManager.registerCommand(new PetCommand());
         commandManager.enableUnstableAPI("help");
+    }
+
+    public PetData getPetData() {
+        return petData;
+    }
+
+    public PetManager getPetManager() {
+        return petManager;
     }
 
     public InventoryManager getInventoryManager() {

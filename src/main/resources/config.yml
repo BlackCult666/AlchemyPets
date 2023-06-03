@@ -1,4 +1,19 @@
+pet-settings:
+  default-petname: "&#7CFC00%player%"
+  level-format: "&#d3d3d3(Lvl: &#90EE90%level%&#d3d3d3)"
+  attributes:
+    health-upgrade-per-time: 10
+    base-health: 20
+    walk-speed: 1.8
+  max-potions: 3
+  respawn-time: 10
+  max-name-length: 25
+  baby: true
+
 messages:
+  no-pet: "&#ff017eI'm sorry, but you don't have a pet!"
+  has-pet: "&#ff017eYou already have a pet, so you can't buy another one."
+  pet-bought: "&#7CFC00You have successfully bought a pet for &a$%price%!"
   pet-help:
     - ""
     - "&#7CFC00/pet shop &#d3d3d3- Buy a pet"
@@ -13,7 +28,7 @@ messages:
   pet-here:
     pet-called: "&#7CFC00Your pet has come to you!"
   pet-away:
-    already-away: "&#ff017eYour pet is not here, so you can't send it away."
+    not-here: "&#ff017eYour pet is not here, so you can't send it away."
     sent-away: "&#ff017eYou have sent your pet away..."
   pet-upgrades:
     upgraded: "&#7CFC00You have upgraded &a%effect% &#7CFC00to level &a%level% &#7CFC00for &a$%price%&#7CFC00!"

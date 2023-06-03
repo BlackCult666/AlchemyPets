@@ -1,0 +1,6 @@
+name: AlchemyPets
+author: BlackCult666
+version: 1.0-SNAPSHOT
+api-version: '1.19'
+main: me.blackcult.alchemypets.AlchemyPets
+commands:

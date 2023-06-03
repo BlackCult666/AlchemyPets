@@ -1,0 +1,173 @@
+pet-shop:
+  title: "&nPet Shop"
+  rows: 5
+  pets:
+    allay:
+      type: "ALLAY"
+      material: "ALLAY_SPAWN_EGG"
+      price: 1000
+      slot: 5
+      name: "&bAllay"
+      lore:
+        - "&7Cost: &b%price%"
+    mushroom:
+      type: "MUSHROOM_COW"
+      material: "MOOSHROOM_SPAWN_EGG"
+      price: 1000
+      slot: 12
+      name: "&cMushroom Cow"
+      lore:
+        - "&7Cost: &c%price%"
+    blaze:
+      type: "BLAZE"
+      material: "BLAZE_SPAWN_EGG"
+      price: 1000
+      slot: 14
+      name: "&6Blaze"
+      lore:
+        - "&7Cost: &6%price%"
+    creeper:
+      type: "CREEPER"
+      material: "CREEPER_SPAWN_EGG"
+      price: 1000
+      slot: 16
+      name: "&2Creeper"
+      lore:
+        - "&7Cost: &2%price%"
+    cow:
+      type: "COW"
+      material: "COW_SPAWN_EGG"
+      price: 1000
+      slot: 20
+      name: "&eCow"
+      lore:
+        - "&7Cost: &e%price%"
+    pig:
+      type: "PIG"
+      material: "PIG_SPAWN_EGG"
+      price: 1000
+      slot: 22
+      name: "&dPig"
+      lore:
+        - "&7Cost: &d%price%"
+    chicken:
+      type: "CHICKEN"
+      material: "CHICKEN_SPAWN_EGG"
+      price: 1000
+      slot: 24
+      name: "&fChicken"
+      lore:
+        - "&7Cost: &f%price%"
+    sheep:
+      type: "SHEEP"
+      material: "SHEEP_SPAWN_EGG"
+      price: 1000
+      slot: 26
+      name: "&8Sheep"
+      lore:
+        - "&7Cost: &8%price%"
+    zombie:
+      type: "ZOMBIE"
+      material: "ZOMBIE_SPAWN_EGG"
+      price: 1000
+      slot: 30
+      name: "&9Zombie"
+      lore:
+        - "&7Cost: &9%price%"
+    cave:
+      type: "CAVE_SPIDER"
+      material: "CAVE_SPIDER_SPAWN_EGG"
+      price: 1000
+      slot: 32
+      name: "&4Cave Spider"
+      lore:
+        - "&7Cost: &4%price%"
+    goat:
+      type: "GOAT"
+      material: "GOAT_SPAWN_EGG"
+      price: 1000
+      slot: 34
+      name: "&3Goat"
+      lore:
+        - "&7Cost: &3%price%"
+    glass:
+      material: "BLACK_STAINED_GLASS_PANE"
+      slot: 1-4 # Slots from 1 to 4 will be filled with this glass.
+      name: "&7"
+      # lore: Of course you can add the lore like upper.
+    glass1:
+      material: "BLACK_STAINED_GLASS_PANE"
+      slot: 6-9
+      name: "&7"
+    glass2:
+      material: "BLACK_STAINED_GLASS_PANE"
+      slot: 10
+      name: "&7"
+    glass3:
+      material: "BLACK_STAINED_GLASS_PANE"
+      slot: 18
+      name: "&7"
+    glass4:
+      material: "BLACK_STAINED_GLASS_PANE"
+      slot: 19
+      name: "&7"
+    glass5:
+      material: "BLACK_STAINED_GLASS_PANE"
+      slot: 27
+      name: "&7"
+    glass6:
+      material: "BLACK_STAINED_GLASS_PANE"
+      slot: 28
+      name: "&7"
+    glass7:
+      material: "BLACK_STAINED_GLASS_PANE"
+      slot: 36
+      name: "&7"
+    glass8:
+      material: "BLACK_STAINED_GLASS_PANE"
+      slot: 37-45
+      name: "&7"
+    glass9:
+      material: "GRAY_STAINED_GLASS_PANE"
+      slot: 11
+      name: "&7"
+    glass10:
+      material: "GRAY_STAINED_GLASS_PANE"
+      slot: 13
+      name: "&7"
+    glass11:
+      material: "GRAY_STAINED_GLASS_PANE"
+      slot: 15
+      name: "&7"
+    glass12:
+      material: "GRAY_STAINED_GLASS_PANE"
+      slot: 17
+      name: "&7"
+    glass13:
+      material: "GRAY_STAINED_GLASS_PANE"
+      slot: 21
+      name: "&7"
+    glass14:
+      material: "GRAY_STAINED_GLASS_PANE"
+      slot: 23
+      name: "&7"
+    glass15:
+      material: "GRAY_STAINED_GLASS_PANE"
+      slot: 25
+      name: "&7"
+    glass16:
+      material: "GRAY_STAINED_GLASS_PANE"
+      slot: 29
+      name: "&7"
+    glass17:
+      material: "GRAY_STAINED_GLASS_PANE"
+      slot: 31
+      name: "&7"
+    glass18:
+      material: "GRAY_STAINED_GLASS_PANE"
+      slot: 33
+      name: "&7"
+    glass19:
+      material: "GRAY_STAINED_GLASS_PANE"
+      slot: 35
+      name: "&7"

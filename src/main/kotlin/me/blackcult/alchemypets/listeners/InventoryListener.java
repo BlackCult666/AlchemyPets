@@ -7,6 +7,7 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 
 public class InventoryListener implements Listener {
+
     private final InventoryManager inventoryManager;
 
     public InventoryListener(InventoryManager inventoryManager) {
