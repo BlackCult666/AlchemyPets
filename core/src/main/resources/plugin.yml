@@ -1,6 +1,8 @@
-name: AlchemyPets
+name: ${project.name}
 author: BlackCult666
-version: 1.0-SNAPSHOT
+version: ${project.version}
 api-version: '1.19'
 main: me.blackcult.alchemypets.AlchemyPets
 commands:
+  pet:
+    description: Pet commands

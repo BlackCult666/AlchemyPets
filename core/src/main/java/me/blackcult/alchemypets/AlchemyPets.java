@@ -8,6 +8,8 @@ import me.blackcult.alchemypets.listeners.InventoryListener;
 import me.blackcult.alchemypets.managers.FileManager;
 import me.blackcult.alchemypets.pets.PetData;
 import me.blackcult.alchemypets.pets.PetManager;
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class AlchemyPets extends JavaPlugin {
@@ -34,8 +36,14 @@ public class AlchemyPets extends JavaPlugin {
         petManager = new PetManager(this);
 
         getServer().getPluginManager().registerEvents(new InventoryListener(inventoryManager), this);
-
         setupCommands();
+    }
+
+    @Override
+    public void onDisable() {
+        for(Player player : Bukkit.getOnlinePlayers()) {
+            getPetManager().despawnPet(player);
+        }
     }
 
     private void setupCommands() {
